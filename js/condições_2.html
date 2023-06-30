@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De qual pais você é?</title>
+</head>
+<body>
+    <h1>De qual pais você é?</h1>
+    <input type="text" id = 'txtpais'>
+    <input type="button" value="É Estrangeiro?" onclick="descobrir()">
+    <div id = 'res'></div>
+    <script>
+        function descobrir() {
+        var res = window.document.getElementById('res')
+        var pais = window.document.getElementById('txtpais').value
+        if (pais != "Brasil") {
+            res.innerHTML = "<p>Você é estrangeiro.<p>"
+        }
+        else{
+            res.innerHTML = "<p> Você não é estrangeiro</p>"
+        }  
+        }
+    </script>
+</body>
+</html>
