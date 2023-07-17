@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+        a{
+            color: red;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        a::before{
+            content: '✓ ' ;
+        }
+        a::after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Cruz0203">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UC0ozVGAgbSl8NT5AytQSTWg">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/cursos/">Site do curso em video</a></li>
+    </ul>
+</body>
+</html>
