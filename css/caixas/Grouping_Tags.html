@@ -4,21 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grouping Tags</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(85, 83, 83);
+            padding: 3px;
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: gray;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            font-size: 1em;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
         <nav>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
         </nav>
     </header>
     <main>
+        <section id="Assuntos">
 
+        </section>
+        <section id="Noticias">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi consequuntur aliquam dignissimos exercitationem repudiandae, assumenda minima quo architecto alias? Laborum nam quas officiis quam, doloremque optio fuga! Ipsam, similique architecto?</p>
+                    <aside>
+                        <p>Artigo legal</p>
+                    </aside>
+            </article>
+        </section>
     </main>
     <footer>
-        <p>Dessenvolvido pelo Vinicius Cruz</p>
+        <p>Desenvolvido por Vinicius Cruz</p>
     </footer>
 </body>
 </html>
