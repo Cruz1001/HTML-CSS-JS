@@ -1,5 +1,10 @@
 @charset "UTF-8";
-
+@font-face {
+    font-family: 'robo';
+    src: url(fontes/idroid.otf) format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -17,6 +22,7 @@ h1#Site{
     margin: 0px;
     color: white;
     padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 p#sub{
@@ -49,5 +55,16 @@ main{
     background-color: white;
     width: 1000px;
     margin: auto;
-    
 }
+
+h1{
+    font-family: 'robo';
+    color:#063D1E;
+    font-size: 2em;
+}
+h2{
+    color: #17422b;
+    background-color: #62B687;
+    font-family: 'robo';
+}
+
