@@ -6,9 +6,7 @@
     font-style: normal;
 }
 
-*{
-    margin: 0px;
-}
+
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -20,6 +18,7 @@ header{
     background-image: linear-gradient(to bottom, #2EA463, #063D1E);
     margin: 0px;
     box-shadow: 5px 5px 15px black;
+    padding-bottom: 0px;
 }
 h1#Site{
     font-size: 3em;
@@ -58,14 +57,17 @@ nav > a:hover{
 
 main{
     background-color: white;
-    width: 1000px;
+    min-height: 320px;
+    max-width: 1000px;
     margin: auto;
+    padding-top: 0px;
 }
 
 h1{
     font-family: 'robo';
     color:#063D1E;
     font-size: 2em;
+    padding-top: 0px;
 }
 h2{
     color: #17422b;
