@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Tektur&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Tektur';
+}
+
+body{
+    background-color: rgba(42, 92, 255, 0.705);
+}
+
+header{
+    padding: 0.8em;
+    font-size: 3em;
+}
+
+article{
+    background-color: rgb(216, 216, 216);
+    width: 600px;
+    margin: auto;
+    padding: 8px;
+    border-radius: 2em;
+}
+
+div#visor{
+    padding: 32px;
+    font-size: 64px;
+    background-color: rgba(21, 194, 21, 0.521);
+    margin: 16px;
+    font-family: 'Tektur';
+}
+
+input{
+    padding: 32px;
+    font-size: 2em;
+    
+}
+footer{
+    padding: 8px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contador</h1>
+    </header>
+    <section>
+        <article>
+            <div id="visor">Hello!</div>
+            <div>
+                <input type="button" value="-" onclick="subtrair()" id="botao">
+                <input type="button" value="reset" onclick="reset()" id="botao">
+                <input type="button" value="+" onclick="somar()" id="botao">
+            </div>  
+        </article>
+    </section>
+    <footer>
+        <p>Feito por Vinicius Cruz!</p>
+    </footer>
+    <script>
+        var num = 0
+        var visor = document.getElementById('visor')
+
+        function somar() {
+            num ++
+            visor.innerHTML = `${num}`
+            if (num >= 0) {
+                visor.style.backgroundColor = 'rgba(21, 194, 21, 0.521)'
+            }
+        }
+        function subtrair() {
+            num --
+            visor.innerHTML = `${num}`
+            if (num < 0) {
+                visor.style.backgroundColor = '#EF5C50'
+            }
+        }
+        function reset(){
+            visor.innerHTML = `Hello!`
+            num = 0
+            if (num >= 0) {
+                visor.style.backgroundColor = 'rgba(21, 194, 21, 0.521)'
+            }
+        }
+    </script>
+</body>
+</html>
