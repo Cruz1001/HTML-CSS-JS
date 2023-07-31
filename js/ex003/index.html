@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercício</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        body{
+            background-color: rgb(193, 231, 231);
+        }
+        header{
+            text-align: center;
+        }
+        section{
+            background-color: white;
+            border-radius: 10px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            text-align: left;
+            padding: 8px;
+        }
+        footer{
+            text-align: center;
+            font-style: italic;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Inicio: <input type="number" name="Nome:" id="inicio">
+            </p>
+            <p>
+                Fim: <input type="number" id="fim">
+            </p>
+            <p>
+                Passo: <input type="number" id="passo">
+            </p>
+            <p><input type="button" value="Contar!" onclick="contar()"></p>
+        </div>
+        <div id="res"></div>
+    </section>
+    <footer><strong>&copy; Cruz</strong></footer>
+    <script>
+        function contar() {
+            var inicio = document.getElementById('inicio')
+            var fim = document.getElementById('fim')
+            var passo = document.getElementById('passo')
+            var cont = 0
+            var res = document.getElementById('res')
+            let i = Number(inicio.value)
+            let f = Number(fim.value)
+            let p = Number(passo.value)
+
+            for (let cont = 0; cont <= f; cont += p) {
+                res.innerHTML += ` ${cont}`
+            }     
+    
+}
+    </script>
+</body>
+</html>
