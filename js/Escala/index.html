@@ -4,50 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <img src="imagens/Captura de tela 2023-08-04 152454.png" alt="">
     </header>
-    <section>
-        <article id="DOM">
-            <p>DOM</p>
-            <div id="Kiosk">
-                Kiosk:
-                <input type="number" name="" id="c_kiosk">
-            </div>
-            <div id="Agente_Self">
-                Agente Self Dom:
-                <input type="number" name="" id="c_agente_self">
-            </div>
-            <div id="Filter_Sacoleiros">
-                Filter Sacoleiros:
-                <input type="number" name="" id="c_filter_sacoleiros">
-            </div>
-            <div id="Loja">
-                LOAB Loja:
-                <input type="number" name="" id="c_loja">
-            </div>
-        </article>
-        <article id="INTER">
-            <div id="Kiosk_Inter">
-                Kiosk Inter:
-                <input type="number" name="" id="c_kiosk_inter">
-            </div>
-            <div id="SBD_Inter">
-                Agente Self Inter:
-                <input type="number" name="" id="c_sbd_inter">
-            </div>
-            <div id="Filter_TPS3">
-                Filter TPS3:
-                <input type="number" name="" id="c_filter_tps3">
-            </div>
-        </article>
-        <aside>
-            <div>
-                <p>Gerar!</p>
-            </div>
-        </aside>
+    <main>
+        <section>
+            <article id="DOM">
+                <h1>DOM</h1>
+                    <div class="d_dom">
+                        Kiosk:
+                        <input type="number" name="" id="c_kiosk" class="contador" maxlength="40">
+                    </div>
+                    <div class="d_dom">
+                        Agente Self:
+                        <input type="number" name="" id="c_agente_self" class="contador" maxlength="40">
+                    </div>
+                    <div class="d_dom">
+                        Filter Sacoleiros:
+                        <input type="number" name="" id="c_filter_sacoleiros" class="contador" maxlength="40">
+                    </div>
+                    <div class="d_dom">
+                        LOAB Loja:
+                        <input type="number" name="" id="c_loja" class="contador" maxlength="40">
+                </div>
+            </article>
+            <article id="INTER">
+                <h1>INTER</h1>
+                    <div class="i_div">
+                        Kiosk:
+                        <input type="number" name="" id="c_kiosk_inter" class="contador" maxlength="40">
+                    </div>
+                    <div class="i_div">
+                        Agente Self:
+                        <input type="number" name="" id="c_sbd_inter" class="contador" maxlength="40">
+                    </div>
+                    <div class="i_div">
+                        Filter TPS3:
+                        <input type="number" name="" id="c_filter_tps3" class="contador" maxlength="40">
+                    </div>
+            </article>
+            <aside>
+                <div id="gerar">
+                    Gerar!
+                </div>
+            </aside>
+    </main>
         <footer>
             <p>Esse site não pertence a LATAM Airlines ou qualquer empresa afiliada a ela, seu desenvolvimento e uso possuem viés educativo.</p>
         </footer>

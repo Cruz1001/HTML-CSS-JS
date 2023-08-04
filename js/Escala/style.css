@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'latam';
+    src: url('fontes/LatamSans-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cordom: #CFEEFA;
+    --corinter: #E8114B;
+    --header: #10004F;
+
+    --fonte_padrao: 'latam', Arial, Helvetica, sans-serif;
+}
+
+*{
+    font-family: var(--fonte_padrao, Arial, Helvetica, sans-serif);
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: var(--header);
+}
+header > img{
+}
+
+body{
+    
+}
+
+.d_dom{
+    background-color: #CFEEFA;
+    padding: 25px;
+    margin: 40px;
+    margin-right: 70px;
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+    font-size: larger;
+    max-width: 300px;
+    min-width: 100px;
+}
+
+.i_div{
+    background-color: #E8114B;
+    padding: 25px;
+    margin: 40px;
+    margin-right: 70px;
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+    max-width: 300px;
+    min-width: 100px;
+    font-size: larger;
+}
+
+.contador{
+    width: 50px;
+}
+aside > div{
+    background-color: #2808a7;
+    padding: 20px;
+    border-radius: 50px;
+    width: 10%;
+    margin: 20px;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    float: right;
+    position: absolute;
+    bottom: 2%; /* Posiciona a div no rodapé do elemento pai 'main' */
+    right: 0; /* Alinha a div à direita do elemento pai 'main' */
+}
+
+aside > div:hover{
+    background-color: #10004F;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
